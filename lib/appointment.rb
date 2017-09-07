@@ -9,16 +9,12 @@ class Appointment
   end
 
 
-  def add_song(song)
-    @songs << song
+  def patient
+    @patient
   end
 
-  def songs
-    @songs
-  end
-
-  def artists
-    @songs.map { |song| song.artist }
+  def doctor
+    @doctor
   end
 
 end
