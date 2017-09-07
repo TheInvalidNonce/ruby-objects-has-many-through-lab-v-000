@@ -19,7 +19,7 @@ class Artist
   end
 
   def genres
-    @genres
+    @genres << song.genres
   end
 
 
