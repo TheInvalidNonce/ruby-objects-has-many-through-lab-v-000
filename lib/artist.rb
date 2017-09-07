@@ -6,7 +6,7 @@ class Artist
     @name = name
     @songs = []
   end
-  
+
 
   def add_song(song)
     @songs << song
@@ -18,7 +18,7 @@ class Artist
   end
 
   def genres
-    @songs.map { |song| song.genre }
+    @songs.map(&:genre)
   end
 
 
