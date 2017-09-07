@@ -20,4 +20,5 @@ class Genre
     @songs.map(&:artist)
   end
 
+
 end
