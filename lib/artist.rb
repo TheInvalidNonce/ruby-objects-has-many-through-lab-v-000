@@ -5,7 +5,6 @@ class Artist
   def initialize(name)
     @name = name
     @songs = []
-    @genres = []
 
   end
 
@@ -19,7 +18,7 @@ class Artist
   end
 
   def genres
-    @genres
+    @songs.map { |song| song.genre }
   end
 
 
